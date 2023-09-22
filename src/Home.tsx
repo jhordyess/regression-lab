@@ -1,11 +1,14 @@
+import LinearRegressionCalculator from '@/components/LinearRegressionCalculator'
+
 const Home = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center gap-y-4 px-2 py-4">
       <header className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold">Hello World!</h1>
+        <h1 className="text-4xl font-bold">Regression Lab</h1>
+        <h2 className="text-lg">Linear Regression Calculator</h2>
       </header>
-      <main className="flex flex-1 flex-col items-center justify-center px-20 text-center">
-        Fugiat veniam cillum tempor ipsum sint quis in commodo sint mollit tempor.
+      <main className="mx-auto flex flex-1 flex-col items-center justify-center text-center">
+        <LinearRegressionCalculator />
       </main>
       <footer className="w-full pt-6 text-center">
         Made with 💪 by&nbsp;
@@ -17,12 +20,13 @@ const Home = () => {
           Jhordyess
         </a>
         <br />
+        👉&nbsp;
         <a
           href="https://github.com/jhordyess/regression-lab"
           target="_blank"
           className="text-blue-500 hover:underline"
         >
-          👉 View on GitHub
+          View on GitHub
         </a>
       </footer>
     </div>
