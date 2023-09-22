@@ -1,55 +1,51 @@
 import { useEffect } from 'react'
 
+const resetMathJax = () => {
+  try {
+    const MathJax = window.MathJax
+    if (typeof MathJax !== 'undefined' && MathJax.typesetClear && MathJax.typeset) {
+      MathJax.typesetClear()
+      MathJax.typeset()
+    }
+  } catch (error) {
+    console.info('Nothing to reset')
+  }
+}
+
 export const BlockEq = ({
-  eq,
-  children,
+  eq = '',
   className,
   tooltip
 }: {
   eq?: string
-  children?: React.ReactNode
   className?: string
   tooltip?: string
 }) => {
   useEffect(() => {
-    const MathJax = window.MathJax
-    if (typeof MathJax !== 'undefined') {
-      MathJax.typesetClear()
-      MathJax.typeset()
-    }
+    resetMathJax()
   }, [eq])
-  // return <div>$${math}$$</div>
-  const texExpression = (eq || children || '').toString()
   return (
     <div className={className} title={tooltip}>
-      {'\\[' + texExpression + '\\]'}
+      {'\\[' + eq + '\\]'}
     </div>
   )
 }
 
 export const InlineEq = ({
-  eq,
-  children,
+  eq = '',
   className,
   tooltip
 }: {
   eq?: string
-  children?: React.ReactNode
   className?: string
   tooltip?: string
 }) => {
   useEffect(() => {
-    const MathJax = window.MathJax
-    if (typeof MathJax !== 'undefined') {
-      MathJax.typesetClear()
-      MathJax.typeset()
-    }
-  }, [eq, children])
-  const texExpression = (eq || children || '').toString()
-
+    resetMathJax()
+  }, [eq])
   return (
     <span className={className + ' inline'} title={tooltip}>
-      {'\\(' + texExpression + '\\)'}
+      {'\\(' + eq + '\\)'}
     </span>
   )
 }
