@@ -4,9 +4,18 @@ React app for analyzing data trends using linear regression.
 
 ## Description
 
+React app for analyzing data trends using linear regression. It allows you to import data, visualize it, calculate regression coefficients, and predict values with ease.
+
+### Features
+
+- Import data from a CSV file.
+- Visualize data with ChartJS.
+- Calculate regression coefficients.
+- Predict values.
+
 ### Technologies Used
 
-- JS Libraries: [ReactJS](https://reactjs.org/)
+- JS Libraries: [ReactJS](https://reactjs.org/), [ChartJS](https://www.chartjs.org/), [Papa Parse](https://www.papaparse.com/), [MathJax](https://www.mathjax.org/)
 - Programming Language: [TypeScript](https://www.typescriptlang.org/)
 - CSS Libraries: [TailwindCSS](https://tailwindcss.com/)
 - Build Tool: [Vite](https://vitejs.dev/)
