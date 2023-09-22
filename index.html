@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/regression-lab/" />
+    <title>Regression Lab</title>
+    <meta
+      name="description"
+      content="React app for analyzing data trends using linear regression."
+    />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/jhordyess/image/upload/v1667836186/global/favicon.svg.svg"
+      type="image/x-icon"
+    />
+    <!-- Adding the MathJax support -->
+    <!-- https://www.mathjax.org/#gettingstarted -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script type="module" crossorigin src="/regression-lab/assets/index-320d511e.js"></script>
+    <link rel="stylesheet" href="/regression-lab/assets/index-10664942.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <script defer>
+      //https://docs.mathjax.org/en/latest/input/tex/delimiters.html
+      MathJax = {
+        loader: { load: ['[tex]/color'] },
+        tex: { packages: { '[+]': ['color'] } }
+      }
+    </script>
+  </body>
+</html>
