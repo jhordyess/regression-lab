@@ -14,10 +14,25 @@
       href="https://res.cloudinary.com/jhordyess/image/upload/v1667836186/global/favicon.svg.svg"
       type="image/x-icon"
     />
+    <!-- Adding the MathJax support -->
+    <!-- https://www.mathjax.org/#gettingstarted -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script defer>
+      //https://docs.mathjax.org/en/latest/input/tex/delimiters.html
+      MathJax = {
+        loader: { load: ['[tex]/color'] },
+        tex: { packages: { '[+]': ['color'] } }
+      }
+    </script>
   </body>
 </html>
