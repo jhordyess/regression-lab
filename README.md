@@ -28,7 +28,7 @@ You can see the demo here: <https://jhordyess.github.io/regression-lab/>
 
 ### Screenshot
 
-![Home](https://res.cloudinary.com/jhordyess/image/upload/v1697241051/regression-lab/main.png)
+![Home](https://res.cloudinary.com/jhordyess/image/upload/v1697241547/regression-lab/main.png)
 
 ## How to use
 
