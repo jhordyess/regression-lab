@@ -26,9 +26,9 @@ React app for analyzing data trends using linear regression. It allows you to im
 
 You can see the demo here: <https://jhordyess.github.io/regression-lab/>
 
-### Screenshots
+### Screenshot
 
-![Home](https://picsum.photos/800/400?random=1)
+![Home](https://res.cloudinary.com/jhordyess/image/upload/v1697241051/regression-lab/main.png)
 
 ## How to use
 
